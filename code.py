@@ -58,7 +58,7 @@ while number_of_A != 4 :
     print()
     print("A :", number_of_A)
     print("B :", number_of_B - number_of_A)
-
+print('congret !!')
 
 
 
