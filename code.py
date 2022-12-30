@@ -1,30 +1,30 @@
 #coded by JRay 2022/12/30 
 
-# ¨ç¼Æ¾É¤J°Ï
+# å‡½æ•¸å°å…¥å€
 import random
 
-# ÅÜ¼Æ«Å§i°Ï
+# è®Šæ•¸å®£å‘Šå€
 i = 0 
 j = 0
 diff = 0 
 number_of_A = 0
 number_of_B = 0
 
-# ¶Ã¼Æ²£¥Í¨t²Î
+# äº‚æ•¸ç”¢ç”Ÿç³»çµ±
 system = list(random.sample(range(0,9),4))
 system = list(map(int, system))
 
 while number_of_A != 4 :
-    # ­«·s¾ã²z«Å§i°Ï
+    # é‡æ–°æ•´ç†å®£å‘Šå€
     i = 0 
     j = 0
     number_of_A = 0
     number_of_B = 0
 
 
-    # ¿é¤J¨t²Î
+    # è¼¸å…¥ç³»çµ±
     user = list(input("plz enter 4 number :"))
-    #¨¾«q°f¤l¨t²Î
+    #é˜²å›é€†å­ç³»çµ±
     while len(user) != 4 :
         user = list(input("plz enter 4 number :"))
     while len(set(user)) != 4:
@@ -32,14 +32,14 @@ while number_of_A != 4 :
     user = list(map(int, user))
 
 
-    # number_of_A ­pºâ
+    # number_of_A è¨ˆç®—
     while i < 4 : 
         diff = system[i] - user[i]
         i = i + 1
         if diff == 0 :
            number_of_A = number_of_A + 1
 
-    # number_of_B ­pºâ
+    # number_of_B è¨ˆç®—
     for i in user:
        for j in system:
           if(i==j):
@@ -54,7 +54,7 @@ while number_of_A != 4 :
     print('user :', user)
     
 
-    # A&B¼Æ¶q¤½¥¬¨t²Î
+    # A&Bæ•¸é‡å…¬å¸ƒç³»çµ±
     print()
     print("A :", number_of_A)
     print("B :", number_of_B - number_of_A)
