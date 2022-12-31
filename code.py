@@ -6,6 +6,7 @@ import random
 # 變數宣告區
 i = 0 
 j = 0
+q = 0
 diff = 0 
 number_of_A = 0
 number_of_B = 0
@@ -18,6 +19,7 @@ while number_of_A != 4 :
     # 重新整理宣告區
     i = 0 
     j = 0
+    q = 0
     number_of_A = 0
     number_of_B = 0
 
@@ -33,9 +35,9 @@ while number_of_A != 4 :
 
 
     # number_of_A 計算
-    while i < 4 : 
+    while q < 4 : 
         diff = system[i] - user[i]
-        i = i + 1
+        q = q + 1
         if diff == 0 :
            number_of_A = number_of_A + 1
 
@@ -58,8 +60,4 @@ while number_of_A != 4 :
     print()
     print("A :", number_of_A)
     print("B :", number_of_B - number_of_A)
-print('congret !!')
-
-
-
-
+print('congret')
