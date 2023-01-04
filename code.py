@@ -6,7 +6,6 @@ import random
 # 變數宣告區
 i = 0 
 j = 0
-q = 0
 diff = 0 
 number_of_A = 0
 number_of_B = 0
@@ -35,9 +34,9 @@ while number_of_A != 4 :
 
 
     # number_of_A 計算
-    while q < 4 : 
+    while i < 4 : 
         diff = system[i] - user[i]
-        q = q + 1
+        i = i + 1
         if diff == 0 :
            number_of_A = number_of_A + 1
 
